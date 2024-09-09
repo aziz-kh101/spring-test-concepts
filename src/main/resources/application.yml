@@ -1,0 +1,17 @@
+spring:
+  application:
+    name: "spring-test-concepts"
+  datasource:
+    url: jdbc:h2:mem:my-db
+    username: root
+    password:
+    driverClassName: org.h2.Driver
+    jpa:
+      database-platform: org.hibernate.dialect.H2Dialect
+
+  jpa:
+    hibernate:
+      ddl-auto: update
+
+server:
+  port: 8085
